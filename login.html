@@ -23,14 +23,16 @@
 					    	<h1 class="h3 mb-3 font-weight-normal">Log into your account</h1>
 					    	<hr>
 					  	</div>
-
+					  	<div class="alert alert-danger rounded-0 d-none p-1 fade show" role="alert" >
+				            user name or password incorrect...!
+				        </div>
 					  	<div class="form-label-group">
-					    	<input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+					    	<input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="email" required>
 					    	<span class="border"></span>
 					    	<label for="inputEmail">Email address</label>
 					  	</div>
 						<div class="form-label-group">
-						    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+						    <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required>
 						    <span class="border"></span>
 						    <label for="inputPassword">Password</label>
 						</div>
@@ -41,7 +43,7 @@
 						    <a class="p-0 mt-1" href="#">forgot password?</a>
 					  	</div>
 					  	<div class="text-center">
-					  		<button class="btn btn-primary mb-2" type="submit"><i class="fas fa-sign-in-alt"></i> Sign in</button>
+					  		<button class="btn btn-primary mb-2" type="submit" id="submitBtn"><i class="fas fa-sign-in-alt" id="signIn"></i> Sign in</button>
 					  		<hr>
 					  		<p class="text-muted p-0 m-0">Don’t have an account yet?</p>
 					  		<a class="p-0 mt-1" href="#">Sign up now</a>
@@ -55,7 +57,7 @@
 			<h4 class="">DevHub</h4>
 			<p class="">&copy; 2019</p>
 		</footer>
-	    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 		<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>

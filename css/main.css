@@ -1,121 +1,181 @@
-/* Resets */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border: 0;
-}
-html {
-  font-family: "Roboto", sans-serif;
-  font-size: 10px;
-}
-
-a {
-  color: black;
-  text-decoration: none;
+/*---------------
+*/
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-/* Utility Classes */
-.container {
-  margin: 8rem auto;
-  max-width: 40rem;
-  padding: 2rem;
-}
-.header-primary {
-  color: #5e3def;
-  font-size: 2rem;
-  font-weight: 400;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-.border {
-  border-bottom: 0.05rem #b5b5b5 solid;
-  margin: auto;
-  width: 20rem;
-}
-/* Login Page */
-
-.login-page {
-  background: url("../img/background.jpg") no-repeat center center/cover;
-}
-
-.form-wrap {
-  background: #fff;
-  padding: 5rem 8rem;
-  color: black;
-  border-radius: 1rem;
-}
-
-.form-wrap .form-group label {
-  margin-bottom: 0.5rem;
-  display: block;
-  color: #787878;
-}
-.form-wrap .form-group input {
-  width: 100%;
-  padding: 0.8rem;
-  background-color: #f4f4f4;
-  border-radius: 0.3rem;
-}
-
-.form-group {
-  margin-top: 2rem;
-}
-
-.form-wrap button {
-  display: block;
-  width: 40%;
-  padding: 1rem;
-  margin: 2rem auto;
-  background: #5e3def;
-  color: #fff;
-  border-radius: 0.3rem;
-  cursor: pointer;
-}
-
-.form-wrap button:hover {
-  background: white;
-  color: #5e3def;
-  border: #5e3def 1px solid;
-}
-.bottom {
-  text-align: center;
-}
-.bottom__text {
-  margin-top: 2rem;
-  color: #787878;
-}
-.bottom__link {
-  display: inline-block;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #5e3def;
-  margin-top: 1rem;
-}
-.bottom__link:hover {
-  border-bottom: 1px solid #5e3def;
-}
-
-footer {
-  margin-top: 3rem;
-  text-align: center;
-}
-footer p {
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  color: white;
-}
-
-/* Resposiveness */
-
-@media (max-width: 376px) {
-  .form-wrap {
-    padding: 5rem 7rem;
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
   }
 }
 
-@media (max-width: 321px) {
-  .form-wrap {
-    padding: 5rem 4rem;
+html,
+body {
+  height: 100%;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #5e3def;
+}
+main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.card {
+  width: 100%;
+  max-width: 350px;
+  padding: 2px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 11px 22px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.form-signin h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 37px;
+  color: #5e3def;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.form-label-group > input,
+.form-label-group > label {
+  height: 3.125rem;
+  padding: 0.75rem;
+}
+.form-label-group > label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  /* Override default `<label>` margin */
+  line-height: 1.5;
+  color: #495057;
+  pointer-events: none;
+  cursor: text;
+  /* Match the input under the label */
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: all 0.1s ease-in-out;
+}
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+.form-label-group input::placeholder {
+  color: transparent;
+}
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: 1.25rem;
+  padding-bottom: 0.25rem;
+}
+.form-label-group input:not(:placeholder-shown) ~ label {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 12px;
+  color: #777;
+}
+/*--------input design*/
+.form-control {
+  border: 0;
+  padding: 10px 0;
+  border-radius: 0px;
+  border-bottom: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.form-control ~ .border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  border: none;
+  background-color: #5e3def;
+}
+.form-control:focus ~ .border {
+  width: 100%;
+  transition: 0.5s;
+  outline: none !important;
+}
+
+/*----------button and design------*/
+.btn {
+  border-color: none !important;
+}
+.btn-primary {
+  border-color: none !important;
+  background: #5e3def;
+  transition: 0.35s;
+}
+
+.btn-primary:hover {
+  background: #5e3def !important;
+  opacity: 0.75;
+}
+
+label {
+  color: #5e3def;
+}
+
+/*------Link design---------*/
+a {
+  color: #5e3def;
+  transition: 0.35s;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: 0.75;
+}
+
+/* Fallback for Edge
+-------------------------------------------------- */
+@supports (-ms-ime-align: auto) {
+  .form-label-group > label {
+    display: none;
+  }
+  .form-label-group input::-ms-input-placeholder {
+    color: #777;
+  }
+}
+/* Fallback for IE
+-------------------------------------------------- */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .form-label-group > label {
+    display: none;
+  }
+  .form-label-group input:-ms-input-placeholder {
+    color: #777;
   }
 }

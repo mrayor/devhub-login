@@ -12,41 +12,43 @@
 	    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
 	    <!-- Main css file -->
 	    <link rel="stylesheet" href="css/main.css">
-	    <title>Login</title>
+	    <title>Register</title>
 	</head>
 	<body>
 		<main class="">
 			<div class="card">
 				<div class="card-body">
-					<form class="form-signin" id="login">
-					  	<div class="text-center mb-4">
-					    	<h1 class="h3 mb-3 font-weight-normal">Log into your account</h1>
-					    	<hr>
+					<form class="form-signin" id="signUp">
+					  	<div class="text-center mb-2">
+					    	<h1 class="h3 mb-2 font-weight-normal">Join us</h1>
 					  	</div>
 					  	<div class="alert alert-danger rounded-0 d-none p-1 fade show" role="alert" >
-				            user name or password incorrect...!
+				            User already exist...!
 				        </div>
+				        <div class="form-label-group">
+					    	<input type="text" id="inputFullName" class="form-control" placeholder="Enter full name" name="fullname" required>
+					    	<span class="border"></span>
+					    	<label for="inputFullName">Full name</label>
+					  	</div>
 					  	<div class="form-label-group">
 					    	<input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="email" required>
 					    	<span class="border"></span>
 					    	<label for="inputEmail">Email address</label>
 					  	</div>
 						<div class="form-label-group">
-						    <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required>
+						    <input type="password" id="inputPassword" class="form-control" placeholder="New Password" name="password" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[~`!@#$%^&*()\-_+={};:\[\]\?\.\\/,]).{6,}" title="Password must contain a capital letter,  a special character and a digit. Password length must be minimum 6 characters." autocomplete="off" required>
 						    <span class="border"></span>
-						    <label for="inputPassword">Password</label>
+						    <label for="inputPassword">New Password</label>
 						</div>
-					  	<div class="d-flex justify-content-between mb-3">
-						    <label id="passwordLabel">
-						      	<input type="checkbox" value="" id="showPassword"> Show password
-						    </label>
-						    <a class="p-0 mt-1" href="#">forgot password?</a>
-					  	</div>
+						<div class="form-label-group">
+						    <input type="password" id="reInputPassword" class="form-control" placeholder="Re-enter Password" name="RePassword" title="Passwords must match" autocomplete="off" required>
+						    <span class="border"></span>
+						    <label for="reInputPassword">Re-enter Password</label>
+						</div>
 					  	<div class="text-center">
-					  		<button class="btn btn-primary mb-2" type="submit" id="submitBtn"><i class="fas fa-sign-in-alt" id="signIn"></i> Sign in</button>
-					  		<hr>
-					  		<p class="text-muted p-0 m-0">Don’t have an account yet?</p>
-					  		<a class="p-0 mt-1" href="register.html">Sign up now</a>
+					  		<button class="btn btn-primary mb-2" type="submit" id="submitBtn"><i class="fas fa-user-plus" id="register"></i> Sign up</button>
+					  		<p class="text-muted p-0 m-0">Already have an account?</p>
+					  		<a class="p-0 mt-1" href="login.html">Login now</a>
 					  	</div>
 					</form>
 				</div>

@@ -1,0 +1,25 @@
+[
+    {
+        "id":"1","fullName":"Message Akunna",
+        "email":"message.ao@gmail.com",
+        "password":"1234"
+    },
+    {
+        "id":"2",
+        "fullName":"Message Akunna",
+        "email":"message.ao@gmail.com",
+        "password":"1234"
+    },
+    {
+        "id":"3",
+        "fullName":"Jeff Darwin",
+        "email":"maven.h@gmail.com",
+        "password":"1234"
+    },
+    {
+        "id":"4",
+        "fullName":"Emmanuel Akunna",
+        "email":"emmy.a@gmail.com",
+        "password":"1@Qwer"
+    }
+]

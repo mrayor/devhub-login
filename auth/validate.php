@@ -8,7 +8,7 @@
 
     $findUser = function($email, $password) use ($objitems) {
         foreach ($objitems as $user) {
-            if ($user->email == $email && $user->password == $password) return $user->email;
+            if ($user->email == $email && $user->password == $password) return $user->email.'&'.$user->fullName;
             // else return 
         }
         return false;

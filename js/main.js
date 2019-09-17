@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	$('#showPassword').on('click', function(event){
-			var checkVal = $('#inputPassword');
+			var checkVal = $('#loginPassword');
 			if (checkVal.attr('type') === 'password') {
 				checkVal.attr('type', 'text');
 			} else {
@@ -25,11 +25,11 @@ $(document).ready(function() {
             		.attr('disabled', false)
             			.html('<i class="fas fa-sign-in-alt" id="signIn"></i> Sign in');
             	if (data){
-            		/* user this data to log in
-            			email: message.ao@gmail.com
-            			password: 1234;
-            		*/
-            		alert('you have successfully logged in.')
+            		// 
+            		var userData = data.split('&');
+            		sessionStorage.setItem('userEmail', userData[0]);
+            		sessionStorage.setItem('userName', userData[1]);
+            		window.location.replace("dashboard.html");
             	}
             	else{
             		$('.alert').removeClass('d-none');
@@ -63,15 +63,19 @@ $(document).ready(function() {
             		.attr('disabled', false)
             			.html('<i class="fas fa-user-plus" id="register"></i> Sign up');
             	if (data) {
-            		$('.alert').removeClass('d-none');
+            		window.location.replace("login.html");
             		// console.log(true);
             	}
             	else{
-            		window.location.replace("login.html");
+            		$('.alert').removeClass('d-none');
             		// console.log(false);
             	}
             }
 		})
+	});
+	$('#logout').on('click', function(e){
+		sessionStorage.clear();
+		window.location.replace("login.html");
 	});
 });
 

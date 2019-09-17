@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <meta name="description" content="Login page for HNG Internship Task 1">
+	    <meta name="author" content="HNG Internship Group">
+	    <!-- Fontawesome CSS -->
+	    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+	    <!-- Bootstrap CSS -->
+	    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+	    <!-- Main css file -->
+	    <link rel="stylesheet" href="css/main.css">
+	    <title>Dashboard</title>
+	</head>
+	<body class="text-center welcome">
+		<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+		  <header class="masthead mb-auto">
+		    <div class="inner">
+		      <h3 class="masthead-brand">DevHub</h3>
+		      <nav class="nav nav-masthead justify-content-center">
+		        <a class="nav-link active" href="#">Home</a>
+		        <a class="nav-link" href="#">Contact us</a>
+		        <a class="nav-link" href="#" id="logout">Logout</a>
+		      </nav>
+		    </div>
+		  </header>
+
+		  	<div role="main" class="inner cover">
+			    <h1 class="cover-heading">Welcome to DevHub</h1>
+			    <div class="card profile-card">
+			        <div class="background-block">
+			            <img src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="profile-sample1" class="background" width="100%" height="150"/>
+			        </div>
+			        <div class="profile-thumb-block">
+			            <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="profile-image" class="profile"/>
+			        </div>
+			        <div class="card-content">
+	                	<h2><span id="username">Justin Mccoy</span><small id="useremail">message.ao@gmail.com</small></h2>
+	                	<div class="icon-block">
+	                		<a href="#"><i class="fab fa-facebook"></i></a>
+	                		<a href="#"> <i class="fab fa-twitter"></i></a>
+	                		<a href="#"> <i class="fab fa-google-plus"></i></a>
+	                	</div>
+	                </div>
+	            </div>
+		  	</div>
+			<footer class="mt-1 text-center text-white mt-auto">
+				<img src="img/logo.png" height="26" width="28">
+				<h4 class="">DevHub</h4>
+				<p class="">&copy; 2019</p>
+			</footer>
+		</div>
+	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/session.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var userName = sessionStorage.getItem('userName');
+				var userEmail = sessionStorage.getItem('userEmail');
+				$('#username').html(userName);
+				$('#useremail').html(userEmail);
+			});
+		</script>
+	</body>
+</html>

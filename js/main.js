@@ -63,11 +63,11 @@ $(document).ready(function() {
             		.attr('disabled', false)
             			.html('<i class="fas fa-user-plus" id="register"></i> Sign up');
             	if (data) {
-            		$('.alert').removeClass('d-none');
+            		window.location.replace("login.html");
             		// console.log(true);
             	}
             	else{
-            		window.location.replace("login.html");
+            		$('.alert').removeClass('d-none');
             		// console.log(false);
             	}
             }

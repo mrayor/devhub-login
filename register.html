@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <meta name="description" content="Login page for HNG Internship Task 1">
+	    <meta name="author" content="HNG Internship Group">
+	    <!-- Fontawesome CSS -->
+	    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+	    <!-- Bootstrap CSS -->
+	    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+	    <!-- Main css file -->
+	    <link rel="stylesheet" href="css/main.css">
+	    <title>Register</title>
+	</head>
+	<body>
+		<main class="">
+			<div class="card">
+				<div class="card-body">
+					<form class="form-signin" id="signUp">
+					  	<div class="text-center mb-2">
+					    	<h1 class="h3 mb-2 font-weight-normal">Join us</h1>
+					  	</div>
+					  	<div class="alert alert-danger rounded-0 d-none p-1 fade show" role="alert" >
+				            User already exist...!
+				        </div>
+				        <div class="form-label-group">
+					    	<input type="text" id="inputFullName" class="form-control" placeholder="Enter full name" name="fullname" required>
+					    	<span class="border"></span>
+					    	<label for="inputFullName">Full name</label>
+					  	</div>
+					  	<div class="form-label-group">
+					    	<input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="email" required>
+					    	<span class="border"></span>
+					    	<label for="inputEmail">Email address</label>
+					  	</div>
+						<div class="form-label-group">
+						    <input type="password" id="inputPassword" class="form-control" placeholder="New Password" name="password" pattern="(?=.*\d)(?=.*[A-Z])(?=.*[~`!@#$%^&*()\-_+={};:\[\]\?\.\\/,]).{6,}" title="Password must contain a capital letter,  a special character and a digit. Password length must be minimum 6 characters." autocomplete="off" required>
+						    <span class="border"></span>
+						    <label for="inputPassword">New Password</label>
+						</div>
+						<div class="form-label-group">
+						    <input type="password" id="reInputPassword" class="form-control" placeholder="Re-enter Password" name="RePassword" title="Passwords must match" autocomplete="off" required>
+						    <span class="border"></span>
+						    <label for="reInputPassword">Re-enter Password</label>
+						</div>
+					  	<div class="text-center">
+					  		<button class="btn btn-primary mb-2" type="submit" id="submitBtn"><i class="fas fa-user-plus" id="register"></i> Sign up</button>
+					  		<p class="text-muted p-0 m-0">Already have an account?</p>
+					  		<a class="p-0 mt-1" href="login.html">Login now</a>
+					  	</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="mt-1 text-center text-white">
+			<img src="img/logo.png" height="26" width="28">
+			<h4 class="">DevHub</h4>
+			<p class="">&copy; 2019</p>
+		</footer>
+	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

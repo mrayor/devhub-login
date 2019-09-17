@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+ task1-loginpage
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,4 +41,69 @@
       </div>
     </section>
   </body>
+=======
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <meta name="description" content="Login page for HNG Internship Task 1">
+	    <meta name="author" content="HNG Internship Group">
+	    <!-- Fontawesome CSS -->
+	    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+	    <!-- Bootstrap CSS -->
+	    <link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+	    <!-- Main css file -->
+	    <link rel="stylesheet" href="css/main.css">
+	    <title>Login</title>
+	</head>
+	<body>
+		<main class="">
+			<div class="card">
+				<div class="card-body">
+					<form class="form-signin" id="login">
+					  	<div class="text-center mb-4">
+					    	<h1 class="h3 mb-3 font-weight-normal">Log Into Your Account</h1>
+					    	<hr>
+					  	</div>
+					  	<div class="alert alert-danger rounded-0 d-none p-1 fade show" role="alert" >
+				            user name or password incorrect...!
+				        </div>
+					  	<div class="form-label-group">
+					    	<input type="email" id="inputEmail" class="form-control" placeholder="Email address" name="email" required>
+					    	<span class="border"></span>
+					    	<label for="inputEmail">Email address</label>
+					  	</div>
+						<div class="form-label-group">
+						    <input type="password" id="loginPassword" class="form-control" placeholder="Password" name="password" required>
+						    <span class="border"></span>
+						    <label for="loginPassword">Password</label>
+						</div>
+					  	<div class="d-flex justify-content-between mb-3">
+						    <label id="passwordLabel">
+						      	<input type="checkbox" value="" id="showPassword"> Show password
+						    </label>
+						    <a class="p-0 mt-1" href="#">Forgot Password?</a>
+					  	</div>
+					  	<div class="text-center">
+					  		<button class="btn btn-primary mb-2" type="submit" id="submitBtn"><i class="fas fa-sign-in-alt" id="signIn"></i> Sign In</button>
+					  		<hr>
+					  		<p class="text-muted p-0 m-0">Don’t have an account yet?</p>
+					  		<a class="p-0 mt-1" href="register.html">Sign up now</a>
+					  	</div>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="mt-1 text-center text-white">
+			<img src="img/logo.png" height="26" width="28">
+			<h4 class="">DevHub</h4>
+			<p class="">&copy; 2019</p>
+		</footer>
+	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/session.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+ master
 </html>

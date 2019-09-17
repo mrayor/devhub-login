@@ -62,6 +62,14 @@ $(document).ready(function() {
             	$('#submitBtn')
             		.attr('disabled', false)
             			.html('<i class="fas fa-user-plus" id="register"></i> Sign up');
+            	if (data) {
+            		$('.alert').removeClass('d-none');
+            		// console.log(true);
+            	}
+            	else{
+            		window.location.replace("login.html");
+            		// console.log(false);
+            	}
             }
 		})
 	});

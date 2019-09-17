@@ -15,24 +15,6 @@
 	    <title>Dashboard</title>
 	</head>
 	<body class="text-center welcome">
-		<!-- <main class="">
-			<div class="card profile-card">
-		        <div class="background-block">
-		            <img src="https://images.pexels.com/photos/870903/pexels-photo-870903.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="profile-sample1" class="background" width="100%" height="150"/>
-		        </div>
-		        <div class="profile-thumb-block">
-		            <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="profile-image" class="profile"/>
-		        </div>
-		        <div class="card-content">
-                	<h2>Justin Mccoy<small>Designer</small></h2>
-                	<div class="icon-block">
-                		<a href="#"><i class="fab fa-facebook"></i></a>
-                		<a href="#"> <i class="fab fa-twitter"></i></a>
-                		<a href="#"> <i class="fab fa-google-plus"></i></a>
-                	</div>
-                </div>
-            </div>
-		</main> -->
 		<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 		  <header class="masthead mb-auto">
 		    <div class="inner">
@@ -40,7 +22,7 @@
 		      <nav class="nav nav-masthead justify-content-center">
 		        <a class="nav-link active" href="#">Home</a>
 		        <a class="nav-link" href="#">Contact us</a>
-		        <a class="nav-link" href="#">Logout</a>
+		        <a class="nav-link" href="#" id="logout">Logout</a>
 		      </nav>
 		    </div>
 		  </header>
@@ -55,7 +37,7 @@
 			            <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="profile-image" class="profile"/>
 			        </div>
 			        <div class="card-content">
-	                	<h2>Justin Mccoy<small>Designer</small></h2>
+	                	<h2><span id="username">Justin Mccoy</span><small id="useremail">message.ao@gmail.com</small></h2>
 	                	<div class="icon-block">
 	                		<a href="#"><i class="fab fa-facebook"></i></a>
 	                		<a href="#"> <i class="fab fa-twitter"></i></a>
@@ -73,6 +55,15 @@
 	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 		<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/session.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var userName = sessionStorage.getItem('userName');
+				var userEmail = sessionStorage.getItem('userEmail');
+				$('#username').html(userName);
+				$('#useremail').html(userEmail);
+			});
+		</script>
 	</body>
 </html>

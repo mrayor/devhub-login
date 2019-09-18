@@ -21,6 +21,7 @@ body {
   background-image: url('../img/background.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: relative;
   background-color: #5E3DEF;
 }
 body.welcome{
@@ -302,7 +303,7 @@ main {
 	opacity: 0.75
 }
 
-.btn-primary:focus{
+.btn-primary:focus{ 
 
 }
 

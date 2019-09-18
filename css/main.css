@@ -227,9 +227,10 @@ main {
   margin-bottom: 0;
   /* Override default `<label>` margin */
   line-height: 1.5;
-  color: #495057;
+  color: #717171;
   pointer-events: none;
   cursor: text;
+  font-size: 14px;
   /* Match the input under the label */
   border: 1px solid transparent;
   border-radius: .25rem;
@@ -266,7 +267,8 @@ main {
 	padding: 10px 0;
 	border-radius: 0px;
 	border-bottom: 1px solid #ccc;
-	background-color: #f9f9f9;
+  background-color: #f9f9f9;
+  color: #5E3DEF
 }
 
 .form-control:focus{

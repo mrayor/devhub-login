@@ -1,8 +1,19 @@
+ welcome-css
 body {
   padding: 0;
   margin: 0;
   background-image: url("../img/background.png");
   background-color: #5e3def;
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: relative;
+    background-color: #5E3DEF;
+ master
 }
 
 .navbar {
@@ -92,9 +103,21 @@ body {
     font-size: 2em;
   }
 
+ welcome-css
   .description p {
     font-size: 1.2em;
   }
+
+.btn{
+	border-color: #737ae8 !important;
+    color: #fff;
+}
+.btn-outline-success{
+	border-color: none !important;
+	background: #5E3DEF;
+	transition: 0.35s;
+}
+ master
 
   .features {
     margin: 0;
